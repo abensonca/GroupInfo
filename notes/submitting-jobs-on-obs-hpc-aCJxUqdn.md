@@ -10,14 +10,17 @@ The OBS HPC compute cluster uses the [SLURM](https://en.wikipedia.org/wiki/Slurm
 
 The `OBS HPC` login node is at `obshpc.carnegiescience.edu` - you can connect with your usual Carnegie credentials.
 
-#### *** HPC
+Full documentation for the cluster lives [here](https://carnegiescience.atlassian.net/wiki/spaces/HPC).
 
-Note that you can also access the equivalent clusters at our other divisions (just ssh to eplhpc.carnegiescience.edu or bsehpc.carnegiescience.edu). Your jobs will not have priority on these systems - so if someone else from those divisions submits a job, you job may get killed. But, it can be useful for running jobs that you can easily restart or resubmit if necessary.
+### Other Carnegie HPC clusters
 
+You can also access the equivalent clusters at our other divisions (just `ssh` to `eplhpc.carnegiescience.edu` or `bsehpc.carnegiescience.edu`). Your jobs will not have priority on these systems - so if someone else from those divisions submits a job, your job may get killed. But, it can be useful for running jobs that you can easily restart or resubmit if necessary.
 
 ### Storage
 
-Your home directory, `/home/$USER`, has a quota of ????. As such, it's recommended that you use your home space for source files and other valuable data. 
+* `/home/$USER` - your home directory. Use it for source files and other valuable data; check your quota with `quota`.
+* `/carnegie/nobackup/users/$USER` - per-user data space. Suitable for larger datasets and run-time outputs (note: not backed up).
+* `/carnegie/nobackup/groups/dmtheory/` - shared group storage (e.g. for merger trees). Ask [Andrew](mailto:abenson@carnegiescience.edu) for access.
 
 
 ## Submitting a Job
@@ -64,7 +67,7 @@ If you have `Galacticus` compiled for MPI parallelism you can run it across mult
 ```
 #!/bin/bash
 #SBATCH --time=1:00:00   # walltime
-#SBATCH --ntasks=24   # number of tasks (i.e. number of Galacticus.exe that will run)
+#SBATCH --ntasks=64   # number of tasks (i.e. number of Galacticus.exe that will run)
 #SBATCH --cpus-per-task=1 # number of CPUs to assign to each task
 #SBATCH --nodes=4   # number of nodes
 #SBATCH --mem-per-cpu=2G   # memory per CPU core
@@ -100,6 +103,10 @@ $ sbatch mySubmitScript.sh
 This will place the job into the queue, and it will automatically start running as soon as resources are available.
 
 You can monitor the status of jobs using:
+```
+squeue -u $USER
+```
+which produces output like:
 ```
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
                859       obs    myJob  abenson  R 2-00:00:11      1 memex-2015-006
@@ -178,3 +185,8 @@ export OMP_NUM_THREADS=Nopenmp
 mpirun --n Nnode*Nmpi --bind-to none --map-by node ./Galacticus.exe myJobParameters.xml
 ```
 This is where the `--bind-to none` is important. Without it, MPI restricts all OpenMP parallel threads to run on the same CPU - which defeats the purpose of using OpenMP. With this option, OpenMP threads have access to all avalable CPUs.
+
+## See also
+
+- [Compiling Galacticus on OBS HPC](compiling-galacticus-on-obs-hpc-OOMa0kUW.md)
+- [Submitting Jobs on Caltech HPC](submitting-jobs-on-caltech-hpc-o4QFFb8Q.md)

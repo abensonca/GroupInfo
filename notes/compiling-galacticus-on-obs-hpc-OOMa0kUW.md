@@ -6,9 +6,15 @@
 
 "OBS HPC" is a compute cluster at Carnegie. It has all of the tools and libraries needed to compile and run Galacticus pre-installed and loadable via the `module` command, so building your own copy of Galacticus is generally straightforward.
 
+Some basic information on OBS HPC:
+* Login node: `obshpc.carnegiescience.edu` (use your usual Carnegie credentials)
+* [Documentation](https://carnegiescience.atlassian.net/wiki/spaces/HPC)
+
 (These notes are always a work in progress - if something doesn't work either ask [Andrew](mailto:abenson@carnegiescience.edu) for help or, if you figure out a solution, update the notes.)
 
-## Loading the `galacticus` module
+## Build environment
+
+### Loading the `galacticus` module
 
 Before attempting to build Galacticus you should run the command:
 ```
@@ -123,3 +129,9 @@ You can find more details about the shared partition [here](https://carnegiescie
 ## Group storage
 
 We have shared storage space at `/carnegie/nobackup/groups/dmtheory/` - used to store shared datasets (e.g. merger trees). If you need access to this, ask [Andrew](mailto:abenson@carnegiescience.edu) to add you to the group.
+
+## See also
+
+- [Submitting Jobs on OBS HPC](submitting-jobs-on-obs-hpc-aCJxUqdn.md)
+- [Compiling Galacticus on Caltech HPC](compiling-galacticus-on-caltech-hpc-jol6HnNq.md)
+- [Compiling Galacticus on NERSC](compiling-galacticus-on-nersc-KMvLs5JT.md)

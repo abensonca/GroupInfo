@@ -10,7 +10,7 @@ The Caltech HPC compute clusters uses the [SLURM](https://en.wikipedia.org/wiki/
 
 Full information can be found [here](https://www.hpc.caltech.edu/documentation).
 
-`Caltech HPC` consists of multiple login node s(where you start when you `ssh` to `Caltech HPC`) and a large number of compute nodes. You should avoid running substantial calculations (i.e. anything that uses more than ~1 minute of CPU time, or uses multiple cores) on the login node. The compute nodes are intended for serious computation.
+`Caltech HPC` consists of multiple login nodes (where you start when you `ssh` to `Caltech HPC`) and a large number of compute nodes. You should avoid running substantial calculations (i.e. anything that uses more than ~1 minute of CPU time, or uses multiple cores) on the login node. The compute nodes are intended for serious computation.
 
 Compute nodes are heterogeneous - they have different numbers of cores and memory as described [here](https://www.hpc.caltech.edu/resources).
 
@@ -105,6 +105,10 @@ This will place the job into the queue, and it will automatically start running 
 
 You can monitor the status of jobs using:
 ```
+squeue -u $USER
+```
+which produces output like:
+```
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON) 
           19782601       any    myJob  abenson  R 2-00:00:11      1 hpc-80-33 
       
@@ -119,7 +123,7 @@ This shows your job number and name, the time it has been running for, and its s
 * `SUSPENDED` - `S`: A running job has been stopped with its cores released to other jobs.
 * `STOPPED` - `ST`: A running job has been stopped with its cores retained.
 
-#### Note for very large numbers of MPI processes
+### Note for very large numbers of MPI processes
 
 If you run very large numbers of MPI processes (256 or more seems to be the trigger point) you may get errors of the form:
 ```
@@ -195,3 +199,8 @@ export OMP_NUM_THREADS=Nopenmp
 mpirun --n Nnode*Nmpi --bind-to none --map-by node ./Galacticus.exe myJobParameters.xml
 ```
 This is where the `--bind-to none` is important. Without it, MPI restricts all OpenMP parallel threads to run on the same CPU - which defeats the purpose of using OpenMP. With this option, OpenMP threads have access to all avalable CPUs.
+
+## See also
+
+- [Compiling Galacticus on Caltech HPC](compiling-galacticus-on-caltech-hpc-jol6HnNq.md)
+- [Submitting Jobs on OBS HPC](submitting-jobs-on-obs-hpc-aCJxUqdn.md)

@@ -12,7 +12,7 @@ Some basic information on Caltech HPC:
 
 (These notes are always a work in progress - if something doesn't work either ask [Andrew](mailto:abenson@carnegiescience.edu) for help or, if you figure out a solution, update the notes.)
 
-## Setting environment variables
+## Build environment
 
 You'll need to set the following environment variables to allow the various libraries to be found and to set appropriate build options:
 
@@ -33,7 +33,7 @@ If you are building a version of Galacticus prior to revision [a6a5c8c](https://
 ```
 export PATH=/home/abenson/perl5/bin:/home/abenson/Tools/bin:$PATH
 export LD_LIBRARY_PATH=/home/abenson/Tools_HDF51.8.20/lib:/home/abenson/Tools_HDF5/lib64:/home/abenson/Tools/lib:/home/abenson/Tools/lib64:$LD_LIBRARY_PATH
-export GALACTICUS_FCFLAGS="-I/home/abenson/Tools_HDF51.8.20/include -fintrinsic-modules-path /home/abenson/Tools_HDF51.8.20/include -fintrinsic-modules-path /home/abenson/Tools/finclude -fintrinsic-modules-path /home/abenson/Tools/include -fintrinsic-modules-path /home/abenson/Tools/include/gfortran -fintrinsic-modules-path /home/abenson/Tools/lib/gfortran/modules -L/home/abenson/Tools_HDF51.8.20/lib -L/home/abenson/Tool_HDF51.8.20/lib64 -L/home/abenson/Tools/lib -L/home/abenson/Tools/lib64"
+export GALACTICUS_FCFLAGS="-I/home/abenson/Tools_HDF51.8.20/include -fintrinsic-modules-path /home/abenson/Tools_HDF51.8.20/include -fintrinsic-modules-path /home/abenson/Tools/finclude -fintrinsic-modules-path /home/abenson/Tools/include -fintrinsic-modules-path /home/abenson/Tools/include/gfortran -fintrinsic-modules-path /home/abenson/Tools/lib/gfortran/modules -L/home/abenson/Tools_HDF51.8.20/lib -L/home/abenson/Tools_HDF51.8.20/lib64 -L/home/abenson/Tools/lib -L/home/abenson/Tools/lib64"
 export GALACTICUS_CFLAGS="-I/home/abenson/Tools_HDF51.8.20/include -I/home/abenson/Tools/include"
 export GALACTICUS_CPPFLAGS="-I/home/abenson/Tools_HDF51.8.20/include -I/home/abenson/Tools/include -I/home/abenson/Tools/include/libqhullcpp"
 export PERL5LIB=/home/abenson/perl5/lib/perl5
@@ -45,7 +45,7 @@ If you are building a version of Galacticus on the [`gfortranFinalization`](http
 ```
 export PATH=/home/abenson/perl5/bin:/home/abenson/Tools_gcc-latest/bin:/home/abenson/Tools/bin:$PATH
 export LD_LIBRARY_PATH=/home/abenson/Tools_gcc-latest/lib:/home/abenson/Tools_gcc-latest/lib64:/home/abenson/Tools/lib:/home/abenson/Tools/lib64:$LD_LIBRARY_PATH
-export GALACTICUS_FCFLAGS="-fintrinsic-modules-path /home/abenson/Tools_gcc-latest/finclude -fintrinsic-modules-path /home/abenson/Tools_gcc-latest/include -fintrinsic-modules-path /home/abenson/Tools_gcc-latest/include/gfortran -fintrinsic-modules-path /home/abenson/Tools_gcc-latest/lib/gfortran/modules fintrinsic-modules-path /home/abenson/Tools/finclude -fintrinsic-modules-path /home/abenson/Tools/include -fintrinsic-modules-path /home/abenson/Tools/include/gfortran -fintrinsic-modules-path /home/abenson/Tools/lib/gfortran/modules -L/home/abenson/Tools/lib -L/home/abenson/Tools/lib64 -L/home/abenson/Tools_gcc-latest/lib -L/home/abenson/Tools/lib64"
+export GALACTICUS_FCFLAGS="-fintrinsic-modules-path /home/abenson/Tools_gcc-latest/finclude -fintrinsic-modules-path /home/abenson/Tools_gcc-latest/include -fintrinsic-modules-path /home/abenson/Tools_gcc-latest/include/gfortran -fintrinsic-modules-path /home/abenson/Tools_gcc-latest/lib/gfortran/modules -fintrinsic-modules-path /home/abenson/Tools/finclude -fintrinsic-modules-path /home/abenson/Tools/include -fintrinsic-modules-path /home/abenson/Tools/include/gfortran -fintrinsic-modules-path /home/abenson/Tools/lib/gfortran/modules -L/home/abenson/Tools/lib -L/home/abenson/Tools/lib64 -L/home/abenson/Tools_gcc-latest/lib -L/home/abenson/Tools/lib64"
 export GALACTICUS_CFLAGS="-I/home/abenson/Tools_gcc-latest/include -I/home/abenson/Tools/include"
 export GALACTICUS_CPPFLAGS="-I/home/abenson/Tools_gcc-latest/include -I/home/abenson/Tools/include -I/home/abenson/Tools/include/libqhullcpp"
 export PERL5LIB=/home/abenson/perl5/lib/perl5
@@ -108,10 +108,16 @@ It's useful to run a very quick test to make sure it's all working:
 ./Galacticus.exe parameters/quickTest.xml
 ```
 
-## Building the Library and Python Module
+## Building the library and Python module
 
 Building the Galacticus library and Python module (so you can use Galacticus in a Jupyter notebook for example) can be done using:
 ```
 make -j2 GALACTICUS_BUILD_OPTION=lib libgalacticus.so
 ```
 See [here](https://github.com/galacticusorg/galacticus/wiki/Python-interface-%28experimental%29) for more details.
+
+## See also
+
+- [Submitting Jobs on Caltech HPC](submitting-jobs-on-caltech-hpc-o4QFFb8Q.md)
+- [Compiling Galacticus on OBS HPC](compiling-galacticus-on-obs-hpc-OOMa0kUW.md)
+- [Compiling Galacticus on NERSC](compiling-galacticus-on-nersc-KMvLs5JT.md)

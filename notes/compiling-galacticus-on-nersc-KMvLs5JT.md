@@ -6,13 +6,14 @@
 
 NERSC is an external resource on which we run Galacticus. It has all of the tools and libraries needed to compile and run Galacticus pre-installed, so building your own copy of Galacticus is generally straightforward.
 
-Some basic information on Caltech HPC:
+Some basic information on NERSC:
 * [Login](https://docs.nersc.gov/connect/)
 * [Resources](https://docs.nersc.gov/systems/perlmutter/architecture/)
+* [Documentation](https://docs.nersc.gov/)
 
 (These notes are always a work in progress - if something doesn't work either ask [Andrew](mailto:abenson@carnegiescience.edu) for help or, if you figure out a solution, update the notes.)
 
-## Setting environment variables
+## Build environment
 
 You'll need to set the following environment variables to allow the various libraries to be found and to set appropriate build options:
 
@@ -21,7 +22,7 @@ export PATH=/global/cfs/cdirs/m4943/Galacticus/buildTools/gcc-12/bin:/global/cfs
 export LD_LIBRARY_PATH=/global/cfs/cdirs/m4943/Galacticus/buildTools/lib:/global/cfs/cdirs/m4943/Galacticus/buildTools/lib64:/lib:/lib64:$LD_LIBRARY_PATH
 export GALACTICUS_FCFLAGS="-fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools/finclude -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools/lib -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools/include -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools/include/gfortran -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools/lib/gfortran/modules -L/global/cfs/cdirs/m4943/Galacticus/buildTools/lib -L/global/cfs/cdirs/m4943/Galacticus/buildTools/lib64"
 export GALACTICUS_CFLAGS="-I/global/cfs/cdirs/m4943/Galacticus/buildTools/include"
-export GALACTICUS_CPPFLAGS=-I/global/cfs/cdirs/m4943/Galacticus/buildTools/include"
+export GALACTICUS_CPPFLAGS="-I/global/cfs/cdirs/m4943/Galacticus/buildTools/include"
 export PERL5LIB="/global/cfs/cdirs/m4943/Galacticus/buildTools/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
 ```
 
@@ -64,13 +65,13 @@ export GALACTICUS_DATA_PATH=$HOME/Galacticus/datasets
 
 You may want to put these `export` commands in your `.bashrc` also so that you don't have to re-enter them every time.
 
-Galacticus generates a bunch of files at run-time which get stored in `$GALACTICUS_DATA_PATH/dynamic`. Since these can become quite large I suggest moving the `dynamic` directory to a scratch disk and creating a link to it. For example:
+Galacticus generates a bunch of files at run-time which get stored in `$GALACTICUS_DATA_PATH/dynamic`. Since these can become quite large I suggest moving the `dynamic` directory to NERSC scratch (`$SCRATCH`) and creating a link to it. For example:
 
 ```
 cd $GALACTICUS_DATA_PATH
-mkdir -p dynamic /resnick/groups/carnegie_poc/$USER/
-mv dynamic /resnick/groups/carnegie_poc/$USER/
-ln -sf /resnick/groups/carnegie_poc/$USER/dynamic
+mkdir -p dynamic $SCRATCH/Galacticus
+mv dynamic $SCRATCH/Galacticus/
+ln -sf $SCRATCH/Galacticus/dynamic
 ```
 
 ## Building Galacticus
@@ -90,10 +91,15 @@ It's useful to run a very quick test to make sure it's all working:
 ./Galacticus.exe parameters/quickTest.xml
 ```
 
-## Building the Library and Python Module
+## Building the library and Python module
 
 Building the Galacticus library and Python module (so you can use Galacticus in a Jupyter notebook for example) can be done using:
 ```
 make -j2 GALACTICUS_BUILD_OPTION=lib libgalacticus.so
 ```
 See [here](https://github.com/galacticusorg/galacticus/wiki/Python-interface-%28experimental%29) for more details.
+
+## See also
+
+- [Compiling Galacticus on Caltech HPC](compiling-galacticus-on-caltech-hpc-jol6HnNq.md)
+- [Compiling Galacticus on OBS HPC](compiling-galacticus-on-obs-hpc-OOMa0kUW.md)
