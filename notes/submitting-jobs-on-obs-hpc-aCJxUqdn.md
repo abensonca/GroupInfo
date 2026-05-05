@@ -20,7 +20,7 @@ You can also access the equivalent clusters at our other divisions (just `ssh` t
 
 * `/home/$USER` - your home directory. Use it for source files and other valuable data; check your quota with `quota`.
 * `/carnegie/nobackup/users/$USER` - per-user data space. Suitable for larger datasets and run-time outputs (note: not backed up).
-* `/carnegie/nobackup/groups/dmtheory/` - shared group storage (e.g. for merger trees). Ask [Andrew](mailto:abenson@carnegiescience.edu) for access.
+* `/carnegie/nobackup/groups/dmtheory/` - shared group storage (e.g. for merger trees). Ask in the [`#dmtheory-help`](https://carnegiescience.slack.com/archives/C065D2V8G3A) Slack channel for access.
 
 
 ## Submitting a Job

@@ -38,6 +38,7 @@ If you're new to the group, start with **Onboarding & policies** and
 
 - [Submitting Jobs on Caltech HPC](notes/submitting-jobs-on-caltech-hpc-o4QFFb8Q.md)
 - [Submitting Jobs on OBS HPC](notes/submitting-jobs-on-obs-hpc-aCJxUqdn.md)
+- [Submitting Jobs on NERSC](notes/submitting-jobs-on-nersc.md)
 
 ## Galacticus development
 

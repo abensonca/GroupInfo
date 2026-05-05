@@ -11,7 +11,7 @@ Some basic information on NERSC:
 * [Resources](https://docs.nersc.gov/systems/perlmutter/architecture/)
 * [Documentation](https://docs.nersc.gov/)
 
-(These notes are always a work in progress - if something doesn't work either ask [Andrew](mailto:abenson@carnegiescience.edu) for help or, if you figure out a solution, update the notes.)
+(These notes are always a work in progress - if something doesn't work, ask in the [`#dmtheory-help`](https://carnegiescience.slack.com/archives/C065D2V8G3A) Slack channel or, if you figure out a solution, update the notes.)
 
 ## Build environment
 
@@ -101,5 +101,6 @@ See [here](https://github.com/galacticusorg/galacticus/wiki/Python-interface-%28
 
 ## See also
 
+- [Submitting Jobs on NERSC](submitting-jobs-on-nersc.md)
 - [Compiling Galacticus on Caltech HPC](compiling-galacticus-on-caltech-hpc-jol6HnNq.md)
 - [Compiling Galacticus on OBS HPC](compiling-galacticus-on-obs-hpc-OOMa0kUW.md)

@@ -10,7 +10,7 @@ Some basic information on Caltech HPC:
 * [Login](https://www.hpc.caltech.edu/documentation/faq/how-do-i-login-cluster)
 * [Resources](https://www.hpc.caltech.edu/resources)
 
-(These notes are always a work in progress - if something doesn't work either ask [Andrew](mailto:abenson@carnegiescience.edu) for help or, if you figure out a solution, update the notes.)
+(These notes are always a work in progress - if something doesn't work, ask in the [`#dmtheory-help`](https://carnegiescience.slack.com/archives/C065D2V8G3A) Slack channel or, if you figure out a solution, update the notes.)
 
 ## Build environment
 

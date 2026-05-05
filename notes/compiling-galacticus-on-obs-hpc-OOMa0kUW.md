@@ -10,7 +10,7 @@ Some basic information on OBS HPC:
 * Login node: `obshpc.carnegiescience.edu` (use your usual Carnegie credentials)
 * [Documentation](https://carnegiescience.atlassian.net/wiki/spaces/HPC)
 
-(These notes are always a work in progress - if something doesn't work either ask [Andrew](mailto:abenson@carnegiescience.edu) for help or, if you figure out a solution, update the notes.)
+(These notes are always a work in progress - if something doesn't work, ask in the [`#dmtheory-help`](https://carnegiescience.slack.com/archives/C065D2V8G3A) Slack channel or, if you figure out a solution, update the notes.)
 
 ## Build environment
 
@@ -126,9 +126,17 @@ works without any problems.
 
 You can find more details about the shared partition [here](https://carnegiescience.atlassian.net/wiki/spaces/HPC/pages/1107820551/Using+Shared+CPUs+Oversubscribe).
 
+## Building the library and Python module
+
+Building the Galacticus library and Python module (so you can use Galacticus in a Jupyter notebook for example) can be done using:
+```
+make -j2 GALACTICUS_BUILD_OPTION=lib libgalacticus.so
+```
+See [here](https://github.com/galacticusorg/galacticus/wiki/Python-interface-%28experimental%29) for more details.
+
 ## Group storage
 
-We have shared storage space at `/carnegie/nobackup/groups/dmtheory/` - used to store shared datasets (e.g. merger trees). If you need access to this, ask [Andrew](mailto:abenson@carnegiescience.edu) to add you to the group.
+We have shared storage space at `/carnegie/nobackup/groups/dmtheory/` - used to store shared datasets (e.g. merger trees). If you need access, ask in the [`#dmtheory-help`](https://carnegiescience.slack.com/archives/C065D2V8G3A) Slack channel.
 
 ## See also
 
