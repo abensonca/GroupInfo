@@ -1,6 +1,8 @@
 # Dark Matter Subhalo Finder Efficiency
 
-###### tags: `dark matter`
+###### status: `active` · last reviewed: TBD
+
+###### tags: `dark matter` `subhalos`
 
 # Background
 

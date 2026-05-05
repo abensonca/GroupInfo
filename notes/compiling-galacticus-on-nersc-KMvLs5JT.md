@@ -1,6 +1,8 @@
 # Compiling Galacticus on NERSC
 
-###### tags: `NERSC` `build`
+###### status: `reference` · last reviewed: TBD
+
+###### tags: `build` `computing` `NERSC`
 
 NERSC is an external resource on which we run Galacticus. It has all of the tools and libraries needed to compile and run Galacticus pre-installed, so building your own copy of Galacticus is generally straightforward.
 

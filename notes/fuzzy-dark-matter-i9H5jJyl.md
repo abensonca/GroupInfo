@@ -1,3 +1,7 @@
+###### status: `active` · last reviewed: TBD
+
+###### tags: `dark matter` `fuzzy dark matter`
+
 ### FDM Halo Modeling Framework
 1. **Concentration-mass relation** (**finished**)
 Another fitting formula: Eq. (12) in [Laroche et al. 2022](https://ui.adsabs.harvard.edu/abs/2022MNRAS.517.1867L/abstract)

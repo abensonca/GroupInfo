@@ -1,6 +1,8 @@
 # Stellar Streams as Substructure Probe
 
-###### tags: `dark matter`
+###### status: `active` · last reviewed: TBD
+
+###### tags: `dark matter` `stellar streams` `subhalos`
 
 ## Erkal's Math
 

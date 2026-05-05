@@ -1,5 +1,9 @@
 # Fuzzy Dark Matter Granule Structure
 
+###### status: `active` · last reviewed: TBD
+
+###### tags: `dark matter` `fuzzy dark matter`
+
 ## Goals
 
 Build a semi-analytic treatment of the effects of fuzzy DM granule perturbations on the orbital motion of particles (black holes, subhalos, etc.).

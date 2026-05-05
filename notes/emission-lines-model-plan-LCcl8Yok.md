@@ -1,6 +1,10 @@
 
 # Emission Lines Model Plan
 
+###### status: `active` · last reviewed: TBD
+
+###### tags: `emission lines` `baryonic physics`
+
 ## Overview
 
 Goal is to construct a model for emission lines that produces plausible distributions of line luminosities - and so gets close to the observed distributions in observables such as the BPT diagram and emission line luminosity functions.

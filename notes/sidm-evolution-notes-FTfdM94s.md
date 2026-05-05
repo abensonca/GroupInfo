@@ -1,5 +1,9 @@
 # SIDM Evolution Notes
 
+###### status: `active` · last reviewed: TBD
+
+###### tags: `dark matter` `SIDM`
+
 The evolution of an SIDM halo is driven by relaxation, which occurs on the characteristic timescale, $t_\mathrm{c}$. In the context of the gravothermal model, we can think of this as redistribution energy in the halo, and so we can define a "cooling rate" per unit volume due to SIDM effects as
 $$
 \mathcal{L}_\mathrm{SIDM} = \frac{\phi_\mathrm{SIDM} \rho_\mathrm{SIDM}}{t_\mathrm{c}}

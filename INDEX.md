@@ -96,3 +96,35 @@ If you're new to the group, start with **Onboarding & policies** and
 - [Emission Line Modeling](notes/emission-line-modeling-mfh3hN9T.md)
 - [Emission Lines Model Plan](notes/emission-lines-model-plan-LCcl8Yok.md)
 - [Emission Lines for OpenUniverse Work](notes/emission-lines-for-cosmosims-work-vSosPAND.md)
+
+## For editors
+
+### Status header
+
+Each note carries a header just below its title of the form:
+
+    ###### status: `active` · last reviewed: YYYY-MM-DD
+
+Status values:
+
+- `active` — currently being worked on
+- `reference` — long-form / how-to / policy / overview; expected to stay accurate
+- `dormant` — paused but not abandoned
+- `archived` — historical, kept for context only
+
+When you next read or edit a note, please also update its `last reviewed`
+date so others can see at a glance how stale the content is. Initial values
+were set in bulk and many are placeholders (`TBD`).
+
+### Tag vocabulary
+
+Tags use HackMD's `###### tags:` convention. To keep search useful, please
+draw from the controlled vocabulary below (add new tags sparingly):
+
+- **Categories:** `policies`, `computing`, `build`, `galacticus development`
+- **Topics:** `dark matter`, `merger trees`, `mass functions`, `excursion sets`,
+  `subhalos`, `concentration`, `spin`, `triaxiality`, `stellar streams`,
+  `fuzzy dark matter`, `SIDM`, `baryonic physics`, `emission lines`,
+  `parameters`, `constraints`
+- **Sites:** `Caltech HPC`, `OBS HPC`, `NERSC`
+- **Tools:** `git`, `GitHub`

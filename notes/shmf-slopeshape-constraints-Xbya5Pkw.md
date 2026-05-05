@@ -1,6 +1,8 @@
 # (S)HMF Slope/Shape Constraints
 
-###### tags: `dark matter`
+###### status: `active` · last reviewed: TBD
+
+###### tags: `dark matter` `subhalos` `mass functions`
 
 ## Goals
 

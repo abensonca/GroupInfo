@@ -1,6 +1,8 @@
 # Galacticus Project Organization
 
-###### tags: `git` `GitHub`
+###### status: `reference` · last reviewed: TBD
+
+###### tags: `galacticus development` `git` `GitHub`
 
 The following is a suggested organization/workflow for projects that make use of Galacticus. This centers around using `git` and GitHub to manage the code and your project files.
 

@@ -1,6 +1,8 @@
 # SIDM Halo Core Collapse
 
-###### tags: `dark matter`
+###### status: `active` · last reviewed: TBD
+
+###### tags: `dark matter` `SIDM`
 
 ## Goals
 

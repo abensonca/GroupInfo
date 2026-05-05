@@ -1,6 +1,8 @@
 # Halo Triaxiality Random Walk Model
 
-###### tags: `dark matter`
+###### status: `active` · last reviewed: TBD
+
+###### tags: `dark matter` `triaxiality`
 
 ## Goals
 

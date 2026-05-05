@@ -48,6 +48,10 @@ There's currently a bit of a disagreement because only a single realization of t
     
 # Reading papers on RealNVP
 
+###### status: `active` · last reviewed: TBD
+
+###### tags: `dark matter` `subhalos` `merger trees`
+
 **Background**
 
 * The object we're interested in obtaining is the joint density of a distribution $p(\mathbf{x})$.

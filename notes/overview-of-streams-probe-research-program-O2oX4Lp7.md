@@ -1,3 +1,7 @@
+###### status: `reference` · last reviewed: TBD
+
+###### tags: `dark matter` `stellar streams` `subhalos`
+
 > [] # Overview of Streams-Probe Research Program
 ## Brief Overview
 * Stellar streams (long thin streams of stars)are an exciting new test of dark matter

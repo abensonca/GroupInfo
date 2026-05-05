@@ -1,5 +1,7 @@
 # Group Policies
 
+###### status: `reference` · last reviewed: TBD
+
 ###### tags: `policies`
 
 ## Contributions to Galacticus and Publication Rights

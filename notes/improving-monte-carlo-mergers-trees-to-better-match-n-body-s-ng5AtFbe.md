@@ -1,6 +1,8 @@
 # Improving Monte Carlo Mergers Trees to Better Match N-body Statistics
 
-###### tags: `merger trees`
+###### status: `active` · last reviewed: TBD
+
+###### tags: `dark matter` `merger trees`
 
 Consider a halo at "time" $\omega$ (the usual time variable for merger tree building), and let $S(\omega)$ be the variance along the branch of the halo as a function of time, i.e. $S(\omega) = \sigma^2(M[t])$.
 

@@ -1,6 +1,8 @@
 # Subhalo Population Emulator
 
-###### tags: `dark matter` `merger trees` `subhalos`
+###### status: `active` · last reviewed: TBD
+
+###### tags: `dark matter` `subhalos` `merger trees`
 
 ## Extension to WDM
 

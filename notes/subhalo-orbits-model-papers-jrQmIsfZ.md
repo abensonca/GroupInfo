@@ -1,6 +1,8 @@
 # Subhalo Orbits Model Papers
 
-###### tags: `dark matter`
+###### status: `reference` · last reviewed: TBD
+
+###### tags: `dark matter` `subhalos`
 
 ## Overview
 

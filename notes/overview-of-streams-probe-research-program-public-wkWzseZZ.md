@@ -1,4 +1,9 @@
 # Overview of Streams-Probe Research Program(public)
+
+###### status: `reference` · last reviewed: TBD
+
+###### tags: `dark matter` `stellar streams` `subhalos`
+
 ## Brief Overview
 * Stellar streams (long thin streams of stars)are an exciting new test of dark matter
 * "Gaps" are created in the stream when subhalos(particularly dense clumps of dark matter) "flyby" and perturb the streams gravitationally.

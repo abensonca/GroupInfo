@@ -1,6 +1,8 @@
 # Spin Stochastic Process Model
 
-###### tags: `dark matter`
+###### status: `active` · last reviewed: TBD
+
+###### tags: `dark matter` `spin`
 
 ## Goal
 

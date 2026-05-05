@@ -1,5 +1,7 @@
 # Conditioning Merger Trees
 
+###### status: `active` · last reviewed: TBD
+
 ###### tags: `dark matter` `merger trees`
 
 ## Test-and-Reject

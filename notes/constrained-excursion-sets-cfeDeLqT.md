@@ -1,6 +1,8 @@
 # Constrained Excursion Sets
 
-###### tags: `dark matter`, `merger trees`
+###### status: `active` · last reviewed: TBD
+
+###### tags: `dark matter` `merger trees` `excursion sets`
 
 Is it possible to solve the constrained excursion set problem? Suppose that we have an excursion starting from $\delta_0(S_0)$. And suppose that we want to constrain the excursion to also pass through the point $\delta_1(S_1)$ with $S_1 > S_0$.
 

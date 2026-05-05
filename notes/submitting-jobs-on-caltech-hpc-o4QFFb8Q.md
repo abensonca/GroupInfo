@@ -1,6 +1,8 @@
 # Submitting Jobs on Caltech HPC
 
-###### tags: `Caltech HPC` `computing`
+###### status: `reference` · last reviewed: TBD
+
+###### tags: `computing` `Caltech HPC`
 
 The Caltech HPC compute clusters uses the [SLURM](https://en.wikipedia.org/wiki/Slurm_Workload_Manager) queue scheduler to manage jobs.
 

@@ -1,6 +1,8 @@
 # Emission Lines for OpenUniverse Work
 
-###### tags: `emission lines`
+###### status: `active` · last reviewed: TBD
+
+###### tags: `emission lines` `baryonic physics`
 
 ## Required lines for _Roman_
 

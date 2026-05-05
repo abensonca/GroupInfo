@@ -1,6 +1,8 @@
 # Compiling Galacticus on OBS HPC
 
-###### tags: `Carnegie` `build`
+###### status: `reference` · last reviewed: TBD
+
+###### tags: `build` `computing` `OBS HPC`
 
 "OBS HPC" is a compute cluster at Carnegie. It has all of the tools and libraries needed to compile and run Galacticus pre-installed and loadable via the `module` command, so building your own copy of Galacticus is generally straightforward.
 

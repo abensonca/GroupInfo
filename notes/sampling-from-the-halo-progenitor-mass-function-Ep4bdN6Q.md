@@ -1,6 +1,8 @@
 # Sampling from the halo progenitor mass function
 
-###### tags: `dark matter` `merger trees`
+###### status: `active` · last reviewed: TBD
+
+###### tags: `dark matter` `merger trees` `mass functions`
 
 Extended Press-Schechter theory gives us the progenitor mass function (at any timestep, but usually we consider a small timestep). As shown by [Zhang, Fakhouri & Ma (2008)](https://ui.adsabs.harvard.edu/abs/2008MNRAS.389.1521Z/) an algorithm which accurately samples from this distribution function is both necessary and sufficient to get the evolution of the mass function correct across all timesteps.
 

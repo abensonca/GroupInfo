@@ -1,6 +1,8 @@
 # Submitting Jobs on OBS HPC
 
-###### tags: `Carnegie` `computing`
+###### status: `reference` · last reviewed: TBD
+
+###### tags: `computing` `OBS HPC`
 
 The OBS HPC compute cluster uses the [SLURM](https://en.wikipedia.org/wiki/Slurm_Workload_Manager) queue scheduler to manage jobs.
 

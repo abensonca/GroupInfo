@@ -1,6 +1,8 @@
 # Mass Functions, Excursion Sets, and Merger Trees
 
-###### tags: `dark matter` `halo mass function` `merger trees`
+###### status: `reference` · last reviewed: TBD
+
+###### tags: `dark matter` `mass functions` `merger trees` `excursion sets`
 
 # The Excursion Set Problem
 

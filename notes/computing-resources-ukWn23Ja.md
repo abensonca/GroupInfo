@@ -1,5 +1,7 @@
 # Computing Resources
 
+###### status: `reference` · last reviewed: TBD
+
 ###### tags: `computing` `git` `GitHub`
 
 ## Python/Anaconda

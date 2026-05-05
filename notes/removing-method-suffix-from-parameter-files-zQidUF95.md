@@ -1,6 +1,8 @@
 # Removing "Method" Suffix from Parameter Files
 
-###### tags: `parameters`
+###### status: `reference` · last reviewed: TBD
+
+###### tags: `galacticus development` `parameters`
 
 [This]([f483d9caf532e5f33cdbe46aad53d076316ec394](https://github.com/galacticusorg/galacticus/commit/f483d9caf532e5f33cdbe46aad53d076316ec394)) patch removed the use of the "`Method`" suffix from class names in parameter files. So, for example `cosmologyParametersMethod` becomes just `cosmologyParameters`. The "`Method`" suffix was needed long ago when Galacticus was first developed, but for a long time now it's just been an annoyance.
 

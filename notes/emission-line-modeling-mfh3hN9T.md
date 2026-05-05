@@ -1,6 +1,8 @@
 # Emission Line Modeling
 
-###### tags: `emissionLines`
+###### status: `active` · last reviewed: TBD
+
+###### tags: `emission lines` `baryonic physics`
 
 I've been working on improving the emission line modeling in Galacticus. I think this has resulted in some improvements, but it's still far from perfect.
 

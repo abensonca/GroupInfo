@@ -1,5 +1,7 @@
 # Concentration Stochastic Process Model
 
+###### status: `active` · last reviewed: TBD
+
 ###### tags: `dark matter` `concentration`
 
 ## Goal

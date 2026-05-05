@@ -1,6 +1,8 @@
 # Merger Rate Calibration Project
 
-###### tags: `merger trees`
+###### status: `active` · last reviewed: TBD
+
+###### tags: `dark matter` `merger trees`
 
 # Steps
 

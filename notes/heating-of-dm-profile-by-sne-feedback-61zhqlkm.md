@@ -1,6 +1,8 @@
 # Heating of DM profile by SNe feedback
 
-###### tags: `dark matter`
+###### status: `active` · last reviewed: TBD
+
+###### tags: `dark matter` `baryonic physics`
 
 [Pontzen & Governato (2012)](https://ui.adsabs.harvard.edu/abs/2012MNRAS.421.3464P) describe this nicely, but not in a way that's super easy to incorporate into a semi-analytic model because they use finite timesteps and sum energy changes over them.
 

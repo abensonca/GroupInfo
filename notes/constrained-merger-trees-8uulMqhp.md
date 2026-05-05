@@ -1,6 +1,8 @@
 # Constrained Merger Trees
 
-###### tags: `merger trees`
+###### status: `active` · last reviewed: TBD
+
+###### tags: `dark matter` `merger trees`
 
 ## Conditioned Excursion Sets
 

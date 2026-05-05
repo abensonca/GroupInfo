@@ -1,6 +1,8 @@
 # Baryonic Physics Constraints Plan
 
-###### tags: `parameters` `constraints`
+###### status: `active` · last reviewed: TBD
+
+###### tags: `baryonic physics` `emission lines` `parameters` `constraints`
 
 ## Overview
 

@@ -1,5 +1,7 @@
 # Subhalo Tidal Tracks Model
 
+###### status: `active` · last reviewed: TBD
+
 ###### tags: `dark matter` `subhalos`
 
 # Overview

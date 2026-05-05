@@ -1,6 +1,8 @@
 # Universal Halo Mass Function
 
-###### tags: `dark matter`
+###### status: `active` · last reviewed: TBD
+
+###### tags: `dark matter` `mass functions`
 
 For the MW zoom-in mass functions, there is definitely a clear trend in the offset (between model prediction and measured HMF) and environmental overdensity, as shown in this plot (offset here is the mean $\log_{10}$ of the ratio of model to N-body mass function between masses of $10^7$ and $10^9\mathrm{M}_\odot$).
 
