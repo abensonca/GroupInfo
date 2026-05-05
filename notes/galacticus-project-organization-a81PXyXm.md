@@ -9,8 +9,8 @@ The following is a suggested organization/workflow for projects that make use of
 The Galacticus codebase is maintained on [GitHub](https://github.com/) - you can find it [here](https://github.com/galacticusorg/galacticus). To begin working with it, the recommended path is as follows:
 1. Get a [GitHub account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) - you'll want a free Personal account
 2. Make a fork (a copy under your own control) of the Galacticus repo following [these instructions](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
-3. Clone the repo to where you want to use it (your laptop, `mies`, CaltechHPC etc.)
-    1. See [here](https://hackmd.io/ukWn23JaTbaiX_LdQq4Prg?both#Git-and-GitHub) for details on how to set up access to GitHub from `mies` or CaltechHPC
+3. Clone the repo to where you want to use it (your laptop, CaltechHPC, OBS HPC, NERSC etc.)
+    1. See [here](https://hackmd.io/ukWn23JaTbaiX_LdQq4Prg?both#Git-and-GitHub) for details on how to set up access to GitHub from a cluster
     2. See [here](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository) for how to clone your repo
 4. Create a branch (a separate line of development, distinct from the `master` branch of Galacticus) for your work
     1. A good introduction to branching can be found [here](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)

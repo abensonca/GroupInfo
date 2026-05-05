@@ -3,6 +3,9 @@
 Group notes maintained on [HackMD](https://hackmd.io) and mirrored to this
 repository for version history and collaborative editing.
 
+For a curated, topic-grouped tour of the notes themselves, see
+[`INDEX.md`](INDEX.md). The rest of this README documents the sync tooling.
+
 ## Setup
 
 1. Install the script's one dependency:

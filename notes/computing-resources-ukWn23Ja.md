@@ -4,85 +4,6 @@
 
 ## Python/Anaconda
 
-### `mies`
-
-The recommended way to use Python on `mies` is to install  your own Python via Anaconca. Follow these instructions.
-
-First install Anaconda - at the command line run these commands.
-```
-mkdir /data001/$USER/anaconda
-cd /data001/$USER/anaconda/
-wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
-bash Anaconda3-2021.05-Linux-x86_64.sh -b -p /data001/$USER/anaconda/anaconda3
-echo "export PATH=/data001/$USER/anaconda/anaconda3/bin:\$PATH" >> ~/.bashrc
-```
-Then, exit `mies` and then log back in, and run the command:
-```
-conda init bash
-```
-Exit `mies` again and then log back in, and run:
-```
-conda update -n base -c defaults conda
-```
-You should now have a newly-installed `python` - check with:
-```
-which python
-```
-which should show something like `/data001/abenson/anaconda/anaconda3/bin/python` (but with your own username instead of `abenson`).
-
-It is recommended that you create a `conda` `environment` for each project - this makes it easier to manage the different tools that you may need for each project. To do so, you would run the following command:
-```
-conda create --name myProject python=3.9 numpy scipy
-```
-This will create an environment called `myProject` (use whatever name you want here), installing `python v3.9` (later versions have incompatibilities with the version of `conda` we are using, so it is important to specify this), and install `numpy` and `scipy` (which you probably want, but you can always omit these if you don't).
-
-Once the install is complete, activate the environment using:
-```
-conda activate myProject
-```
-and then run the command:
-```
-/shared/local/bin/fixPython
-```
-which fixes up some problems related to the older library versions installed on `mies`.
-
-If you need to install any additional packages you need using, for example:
-```
-conda install matplotlib
-conda install h5py
-conda install filelock
-```
-etc.
-
-#### Trouleshooting
-
-##### `undefined symbol: omp_get_num_procs`
-
-This error seems to occur for reasons we don't fully understand - probably related to the fact that `mies` is running an older operating system. A workaround is to force loading of the relevant libraries. Try this command:
-```
-alias pythonL='LD_PRELOAD="$CONDA_PREFIX/lib/libiomp5.so $CONDA_PREFIX/lib/libgcc_s.so.1" python'
-```
-and then launch Python using `pythonL` instead of `python`.
-
-##### `version 'GLIBC_2.14' not found` or similar
-
-Most likely `python` is finding an outdated version of `GLIBC`. Try:
-```
-unset LD_LIBRARY_PATH
-```
-to be sure that it's not looking for this library in some non-standard location.
-
-##### Can not `activate` `conda` environment when  submitting to the queue on `mies`
-
-If you submit a job to the queue where you try to activate a `conda` environment and see something like this in the output:
-```
-CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
-```
-then you may need to manually source the `conda` profile in the job script that you submit. Include the following in your script before trying to activate a `conda` environment:
-```
-. /data001/${USER}/anaconda/anaconda3/etc/profile.d/conda.sh
-```
-
 ### Caltech HPC
 
 At Caltech HPC the recommended way to install Python modules is also via Anaconda. Follow the instructions [here](https://www.hpc.caltech.edu/documentation/software-and-modules) (under "Anaconda Package Management" and "Example 1") to install `conda`. You can then install packages using:
@@ -99,27 +20,9 @@ Some basic resources for getting started with version control using `git` and Gi
 
 ### Authenticating to GitHub
 
-GitHub no longer allows you to authenticate via username and password when pulling/pushing. Instead you can use a Personal Access Token or an SSH key. On `mies` and Caltech HPC it is recommended to set up an SSH key for authentication. 
+GitHub no longer allows you to authenticate via username and password when pulling/pushing. Instead you can use a Personal Access Token or an SSH key. On Caltech HPC it is recommended to set up an SSH key for authentication.
 
 #### Creating an SSH key
-
-**Note:** On `mies` for this to work you'll need to be using the newer version of `ssh` installed by Andrew. You can check this by running the command:
-```
-which ssh
-```
-If it reports:
-```
-/home/abenson/Galacticus/Tools/bin/ssh
-```
-then you _are_ using the new version. If it instead reports:
-```
-/usr/bin/ssh
-```
-then you are using the old version, and should do:
-```
-export PATH=/home/abenson/Galacticus/Tools/bin:$PATH
-```
-so that you use the new version
 
 ##### Generate the key
 
@@ -176,13 +79,13 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ0P4MArMGSypyBQv51d7ZSuDRhxfROWk2/Bg8NhAM/1
 ```
 Select this entire text in the terminal and copy to the clipboard.
 
-Next, go to [https://github.com/settings/keys](https://github.com/settings/keys) and click the green "New SSH key" button. In the "Title" box enter "Caltech HPC key" or "mies key". In the key box paste your new SSH key from the clipboard. Finally, click the green "Add SSH key" button. 
+Next, go to [https://github.com/settings/keys](https://github.com/settings/keys) and click the green "New SSH key" button. In the "Title" box enter "Caltech HPC key". In the key box paste your new SSH key from the clipboard. Finally, click the green "Add SSH key" button. 
 
 You should be all set and able to push/pull to/from GitHub.
 
 #### Configure the cluster to use your key
 
-On `mies` or Caltech HPC run the command:
+On Caltech HPC run the command:
 ```
 git config --global core.sshCommand "ssh -i ~/.ssh/github_ed25519"
 ```
@@ -213,50 +116,11 @@ git difftool -t xmldiff myXMLFile.xml
 ```
 which will use the [`xdiff`](https://hg.sr.ht/~nolda/xdiff) tool to show differences.
 
-## Storage on Clusters
-
-### `mies`
-
-On `mies` you have a fixed quota of storage (typically 50GB) in your `/home/${USER}` folder. It's recommended to keep important files (source code, etc.) that are difficult to recreate automatically there. Larger data files (which can be reconstructed if they happen to be lost to a disk failure) should be stored in `/data001/${USER}/` or `/dat002/${USER}/`.
-
-You can see your usage on /home using the command quota. For example, for user `abenson` it shows:
-```
-$ quota
-Disk quotas for user abenson (uid 509): 
-     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace
-       /dev/md6 14456472  50000000 60000000           83784       0       0        
-```
-Here `/dev/md6` is just the internal name for `/home`. And the usage is reported in blocks which are units of KB. So, from the output above, `abenson` is using 14.45GB out of a quota of 50GB (the limit of 60GB here means that it will actually allow to go over quota, up to 60GB before it really starts to prevent further writing more).
-
-If you see error messages of the form `write error (file system full?)` most likely what you need to do is to move some data from `/home` to `/data001` or `/data002` (which have much more space). A useful way to see a breakdown of your data on /home  is the du command, e.g.:
-```
-du -sh /home/abenson/*
-reports:
-$ u -sh /home/abenson/*
-22M     /home/abenson/Computing
-4.0K    /home/abenson/Desktop
-4.0K    /home/abenson/Facilities
-13G     /home/abenson/Galacticus
-4.0K    /home/abenson/Mail
-```
-from which it can be seen that most of user `abenson`'s data is in the `Galacticus` folder. And then:
-```
-$ du -sh /home/abenson/Galacticus/*
-6.4G    /home/abenson/Galacticus/Tools
-5.2G    /home/abenson/Galacticus/galacticus
-18M     /home/abenson/Galacticus/galacticus.wiki
-12K     /home/abenson/Galacticus/galacticusDockerBuildEnv
-36K     /home/abenson/Galacticus/galacticusGitHooks
-4.0K    /home/abenson/Galacticus/galacticusSingularity
-688K    /home/abenson/Galacticus/galacticus_gh-pages
-```
-will further break down the usage in that folder.
-
 ## Development tools
 
 ### VSCode
 
-The recommended development environment for OBS HPC and Caltech HPC is [VSCode](https://code.visualstudio.com/) (on `mies` [VSCode](https://code.visualstudio.com/) is not supported). This provides a full IDE (Integrated Deveopment Environment), with a graphical interface, and powerful tools to help you write code more efficiently.
+The recommended development environment for OBS HPC and Caltech HPC is [VSCode](https://code.visualstudio.com/). This provides a full IDE (Integrated Deveopment Environment), with a graphical interface, and powerful tools to help you write code more efficiently.
 
 To install VSCode on your laptop, visit the [downloads](https://code.visualstudio.com/download) page and follow instructions there.
 
@@ -300,7 +164,7 @@ Also, I've found that VSCode sessions are a lot more stable (using a regular ter
 
 `tmux` is a terminal multiplexer - it allows you to run multiple terminals inside a single `ssh` session. The most useful feature of this is that you can disconnect (intentionally or otherwise) from the remote computer, and your terminals inside `tmux` continue to exist - even continuing to run commands that were underway. When you reconnect to the remote computer you can then reconnect to the `tmux` session and everything will be just as you left it.
 
-On `mies` you can find `tmux` in `/home/abenson/Galacticus/Tools/bin/tmux`. On Caltech HPC you can find it in `/usr/bin/tmux`.
+On Caltech HPC you can find `tmux` in `/usr/bin/tmux`.
 
 There's a reasonably good introduction to `tmux` by RedHat that you can find [here](https://www.redhat.com/sysadmin/introduction-tmux-linux).
 
