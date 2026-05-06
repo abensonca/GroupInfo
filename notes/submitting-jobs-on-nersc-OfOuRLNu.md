@@ -1,6 +1,6 @@
 # Submitting Jobs on NERSC
 
-###### status: `reference` · last reviewed: TBD
+###### status: `reference` · last reviewed: 05/05/2026
 
 ###### tags: `computing` `NERSC`
 

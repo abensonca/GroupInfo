@@ -1,6 +1,6 @@
 # Submitting Jobs on OBS HPC
 
-###### status: `reference` · last reviewed: TBD
+###### status: `reference` · last reviewed: 05/05.2026
 
 ###### tags: `computing` `OBS HPC`
 

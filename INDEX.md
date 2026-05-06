@@ -40,11 +40,6 @@ If you're new to the group, start with **Onboarding & policies** and
 - [Submitting Jobs on OBS HPC](notes/submitting-jobs-on-obs-hpc-aCJxUqdn.md)
 - [Submitting Jobs on NERSC](notes/submitting-jobs-on-nersc.md)
 
-## Galacticus development
-
-- [Removing "Method" Suffix from Parameter Files](notes/removing-method-suffix-from-parameter-files-zQidUF95.md)
-  — convention/migration note for parameter naming.
-
 ## Research projects
 
 ### Merger trees, mass functions, excursion sets
@@ -59,43 +54,19 @@ If you're new to the group, start with **Onboarding & policies** and
 - [Improving Monte Carlo Merger Trees to Better Match N-body Statistics](notes/improving-monte-carlo-mergers-trees-to-better-match-n-body-s-ng5AtFbe.md)
 - [Merger Rate Calibration Project](notes/merger-rate-calibration-project-yNQD765T.md)
 
-### Halo properties (stochastic-process models)
-
-- [Concentration Stochastic Process Model](notes/concentration-stochastic-process-model-FQrO6Txr.md)
-- [Spin Stochastic Process Model](notes/spin-stochastic-process-model-hIEK1DxT.md)
-- [Halo Triaxiality Random Walk Model](notes/halo-triaxiality-random-walk-model-XLf5QYjR.md)
-
-### Subhalos & substructure
-
-- [Subhalo Tidal Tracks Model](notes/subhalo-tidal-tracks-model-GAVyCqaK.md)
-- [Subhalo Orbits Model Papers](notes/subhalo-orbits-model-papers-jrQmIsfZ.md)
-- [Subhalo Population Emulator](notes/subhalo-population-emulator-M1hUcBkA.md)
-- [Subhalo Population Emulation](notes/subhalo-population-emulation-iqKXPdsC.md)
-  — overlaps with the entry above; worth merging or cross-linking.
-- [Dark Matter Subhalo Finder Efficiency](notes/dark-matter-subhalo-finder-efficiency-C0nHtSOl.md)
-- [(S)HMF Slope/Shape Constraints](notes/shmf-slopeshape-constraints-Xbya5Pkw.md)
-
 ### Stellar streams
 
 - [Overview of Streams-Probe Research Program](notes/overview-of-streams-probe-research-program-O2oX4Lp7.md)
   — full internal overview.
-- [Overview of Streams-Probe Research Program (public)](notes/overview-of-streams-probe-research-program-public-wkWzseZZ.md)
-  — public-facing version of the above.
-- [Stellar Streams as Substructure Probe](notes/stellar-streams-as-substructure-probe-rW6oVexC.md)
 
 ### Alternative dark matter physics
 
 - [Fuzzy Dark Matter](notes/fuzzy-dark-matter-i9H5jJyl.md)
 - [Fuzzy Dark Matter Granule Structure](notes/fuzzy-dark-matter-granule-structure-q0yqg0TI.md)
-- [SIDM Evolution Notes](notes/sidm-evolution-notes-FTfdM94s.md)
-- [SIDM Halo Core Collapse](notes/sidm-halo-core-collapse-tltE2gjR.md)
-- [Heating of DM Profile by SNe Feedback](notes/heating-of-dm-profile-by-sne-feedback-61zhqlkm.md)
 
-### Baryonic physics & emission lines
+### Emission lines
 
-- [Baryonic Physics Constraints Plan](notes/baryonic-physics-constraints-plan-eygJtc1Q.md)
 - [Emission Line Modeling](notes/emission-line-modeling-mfh3hN9T.md)
-- [Emission Lines Model Plan](notes/emission-lines-model-plan-LCcl8Yok.md)
 - [Emission Lines for OpenUniverse Work](notes/emission-lines-for-cosmosims-work-vSosPAND.md)
 
 ## For editors

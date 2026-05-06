@@ -1,6 +1,6 @@
 # Mass Functions, Excursion Sets, and Merger Trees
 
-###### status: `reference` · last reviewed: TBD
+###### status: `reference` · last reviewed: 05/05/2026
 
 ###### tags: `dark matter` `mass functions` `merger trees` `excursion sets`
 
