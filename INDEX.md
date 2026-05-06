@@ -18,15 +18,14 @@ If you're new to the group, start with **Onboarding & policies** and
 - [Galacticus Project Organization](notes/galacticus-project-organization-a81PXyXm.md)
   — recommended `git`/GitHub workflow for projects that use Galacticus.
 - [Useful Resources](notes/useful-resources-Xbd2iEcK.md) — external links worth
-  bookmarking (currently a stub — please add to it).
+  bookmarking.
 
 ## Computing
 
 ### Environment & tooling
 
 - [Computing Resources](notes/computing-resources-ukWn23Ja.md) — Python/Anaconda
-  setup, GitHub SSH keys, VSCode, `tmux`, `git diff` helpers, software
-  engineering links.
+  setup, GitHub SSH keys, VSCode, `tmux`, `git diff` helpers.
 
 ### Building Galacticus
 
@@ -38,7 +37,7 @@ If you're new to the group, start with **Onboarding & policies** and
 
 - [Submitting Jobs on Caltech HPC](notes/submitting-jobs-on-caltech-hpc-o4QFFb8Q.md)
 - [Submitting Jobs on OBS HPC](notes/submitting-jobs-on-obs-hpc-aCJxUqdn.md)
-- [Submitting Jobs on NERSC](notes/submitting-jobs-on-nersc.md)
+- [Submitting Jobs on NERSC](notes/submitting-jobs-on-nersc-OfOuRLNu.md)
 
 ## Research projects
 
@@ -46,28 +45,22 @@ If you're new to the group, start with **Onboarding & policies** and
 
 - [Mass Functions, Excursion Sets, and Merger Trees](notes/mass-functions-excursion-sets-and-merger-trees-cWwQQlHo.md)
   — long-form reference write-up.
-- [Universal Halo Mass Function](notes/universal-halo-mass-function-oo0r3bsY.md)
-- [Sampling from the Halo Progenitor Mass Function](notes/sampling-from-the-halo-progenitor-mass-function-Ep4bdN6Q.md)
-- [Constrained Excursion Sets](notes/constrained-excursion-sets-cfeDeLqT.md)
-- [Constrained Merger Trees](notes/constrained-merger-trees-8uulMqhp.md)
-- [Conditioning Merger Trees](notes/conditioning-merger-trees-xGXlmmdu.md)
 - [Improving Monte Carlo Merger Trees to Better Match N-body Statistics](notes/improving-monte-carlo-mergers-trees-to-better-match-n-body-s-ng5AtFbe.md)
-- [Merger Rate Calibration Project](notes/merger-rate-calibration-project-yNQD765T.md)
+  — collected work on correlated random walks, constrained excursion sets,
+  constrained merger trees, and progenitor mass-function sampling.
 
 ### Stellar streams
 
 - [Overview of Streams-Probe Research Program](notes/overview-of-streams-probe-research-program-O2oX4Lp7.md)
-  — full internal overview.
 
-### Alternative dark matter physics
+### Fuzzy dark matter
 
 - [Fuzzy Dark Matter](notes/fuzzy-dark-matter-i9H5jJyl.md)
 - [Fuzzy Dark Matter Granule Structure](notes/fuzzy-dark-matter-granule-structure-q0yqg0TI.md)
 
 ### Emission lines
 
-- [Emission Line Modeling](notes/emission-line-modeling-mfh3hN9T.md)
-- [Emission Lines for OpenUniverse Work](notes/emission-lines-for-cosmosims-work-vSosPAND.md)
+- [Emission Lines Model Plan](notes/emission-lines-model-plan-LCcl8Yok.md)
 
 ## For editors
 
