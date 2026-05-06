@@ -1,6 +1,6 @@
 # Emission Lines Model Plan
 
-###### status: `active` · last reviewed: 05/05/2026
+###### status: `active` · last reviewed: 2026-05-05
 
 ###### tags: `emission lines` `baryonic physics`
 

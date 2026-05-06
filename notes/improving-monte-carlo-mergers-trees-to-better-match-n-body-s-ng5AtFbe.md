@@ -1,6 +1,6 @@
 # Improving Monte Carlo Mergers Trees to Better Match N-body Statistics
 
-###### status: `active` · last reviewed: 06/05/2026
+###### status: `active` · last reviewed: 2026-05-06
 
 ###### tags: `dark matter` `merger trees`
 

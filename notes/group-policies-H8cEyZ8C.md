@@ -1,6 +1,6 @@
 # Group Policies
 
-###### status: `reference` · last reviewed: 05/05/2026
+###### status: `reference` · last reviewed: 2026-05-05
 
 ###### tags: `policies`
 

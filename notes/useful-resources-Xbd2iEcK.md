@@ -1,6 +1,6 @@
 # Useful Resources
 
-###### status: `reference` · last reviewed: 05/05/2026
+###### status: `reference` · last reviewed: 2026-05-05
 
 External links the group has found genuinely useful. Add to it as you find more.
 
