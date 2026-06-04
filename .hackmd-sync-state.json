@@ -1,17 +1,17 @@
 {
   "notes": {
     "H8cEyZ8CQUOFPLADWgIbeg": {
-      "content_hash": "fde73320b4c07866a980e4da53ecb7db54ba72c30083557b3955321f741fc7ae",
+      "content_hash": "e9a81456649433e4af3395a18350ea60604c812b1a9cb9059d9924e18038095c",
       "filename": "group-policies-H8cEyZ8C.md",
-      "last_changed_at": 1777994907318,
-      "last_synced_at": 1777995037618,
+      "last_changed_at": 1778077770613,
+      "last_synced_at": 1778077763433,
       "title": "Group Policies"
     },
     "LCcl8YokSlKdj4ZmN-H39A": {
-      "content_hash": "5b6fed08358fece3d523e45714fbcedad00f0ccd2df25aae2fd849c704e8bb00",
+      "content_hash": "69ec58b12ed369e9289ca5875cc6f69addcc6134bb806d05c5a945210c30962b",
       "filename": "emission-lines-model-plan-LCcl8Yok.md",
-      "last_changed_at": 1777995364942,
-      "last_synced_at": 1777995363687,
+      "last_changed_at": 1778077769829,
+      "last_synced_at": 1778077763433,
       "title": "Emission Lines Model Plan"
     },
     "O2oX4Lp7SnCiAodrtIiOeQ": {
@@ -22,31 +22,31 @@
       "title": "Overview of Streams-Probe Research Program"
     },
     "OOMa0kUWRYGOs1gqyYPtXA": {
-      "content_hash": "44357099c281a16082bc50cfcf368726fa8da73c277f2419d8316758df77155c",
+      "content_hash": "d5d41c7ed4e3c723a36c6f2d7eafd5950998de0a5f17e53b9dfc28e70d5cec81",
       "filename": "compiling-galacticus-on-obs-hpc-OOMa0kUW.md",
-      "last_changed_at": 1777994509828,
-      "last_synced_at": 1777994493161,
+      "last_changed_at": 1780585987412,
+      "last_synced_at": 1780585985617,
       "title": "Compiling Galacticus on OBS HPC"
     },
     "OfOuRLNuRxWnIOR3gW4SCg": {
-      "content_hash": "4dd41ecc3507345149f700d05b006d2fa5b6a9ebff70bce2cd14fe579d7bc72c",
+      "content_hash": "f829f54faa879ef54a554eb54563db7070b534311d5a3be594d2d9d11fbfe5da",
       "filename": "submitting-jobs-on-nersc-OfOuRLNu.md",
-      "last_changed_at": 1777994758361,
-      "last_synced_at": 1777995037618,
+      "last_changed_at": 1778077766190,
+      "last_synced_at": 1778077763433,
       "title": "Submitting Jobs on NERSC"
     },
     "Xbd2iEcKQM-vyiME4i_9qw": {
-      "content_hash": "92bc16271c26764fc4f60c20003ce080eceb9fca2d6d41498b9ff0e2efa99534",
+      "content_hash": "aa571355d5f4cbc38e2900eea0d24c59a4078e4a39080858bfb1c1d9762da2dd",
       "filename": "useful-resources-Xbd2iEcK.md",
-      "last_changed_at": 1777994858206,
-      "last_synced_at": 1777995037618,
+      "last_changed_at": 1778077767011,
+      "last_synced_at": 1778077763433,
       "title": "Useful Resources"
     },
     "_KMvLs5JTT6dTPA1VQDrrg": {
-      "content_hash": "857f3f91053682b1bf4179d0cb7a75da74714be533461c10c0af0f5b9efd4d1d",
+      "content_hash": "8b5b760c61abf2bbb42da76483fa528ba54956a6ec6d0cd92c8bc30b4c665b78",
       "filename": "compiling-galacticus-on-nersc-KMvLs5JT.md",
-      "last_changed_at": 1777994514314,
-      "last_synced_at": 1777994493161,
+      "last_changed_at": 1780585986727,
+      "last_synced_at": 1780585985617,
       "title": "Compiling Galacticus on NERSC"
     },
     "a81PXyXmRa6AJUija-CLdw": {
@@ -57,17 +57,17 @@
       "title": "Galacticus Project Organization"
     },
     "aCJxUqdnShSAjVcX_vUwpg": {
-      "content_hash": "41be194cbc65ba905325f628fb75facfde6c450c75fa8549a9e1e001364a71d6",
+      "content_hash": "90b41dbb8ab511e1496ee4f98708b83c9146150cb558e7f7c54ab03828c6aeea",
       "filename": "submitting-jobs-on-obs-hpc-aCJxUqdn.md",
-      "last_changed_at": 1777994729804,
-      "last_synced_at": 1777995037618,
+      "last_changed_at": 1778077768085,
+      "last_synced_at": 1778077763433,
       "title": "Submitting Jobs on OBS HPC"
     },
     "cWwQQlHoRw2h40ZRG1f7Jg": {
-      "content_hash": "3b0fdf7818a57cbf87ebdcfc69466bc5e9bba24220a394f1c45cf6fcfa558867",
+      "content_hash": "0462ee634ef1bad5d0dd485be2d33f2a59cc580b6168f1a82269e9934d75aa30",
       "filename": "mass-functions-excursion-sets-and-merger-trees-cWwQQlHo.md",
-      "last_changed_at": 1777995491999,
-      "last_synced_at": 1777995501167,
+      "last_changed_at": 1778077763768,
+      "last_synced_at": 1778077763433,
       "title": "Mass Functions, Excursion Sets, and Merger Trees"
     },
     "i9H5jJylSF6gan7jSG-hiA": {
@@ -78,17 +78,17 @@
       "title": "Fuzzy Dark Matter"
     },
     "jol6HnNqT7KVaAMwzhXoHg": {
-      "content_hash": "44ca180a09d0054cc513978dac6567e718264a7868c5f849cec4c280303ebc4a",
+      "content_hash": "b81f210b6df002f05f21f4a91670f9c43b26d138ab7c3db802f05f5efd38d7ae",
       "filename": "compiling-galacticus-on-caltech-hpc-jol6HnNq.md",
-      "last_changed_at": 1777994500487,
-      "last_synced_at": 1777994493161,
+      "last_changed_at": 1780585988954,
+      "last_synced_at": 1780585985617,
       "title": "Compiling Galacticus on Caltech HPC"
     },
     "ng5AtFbeTTSPcZ00eaVzKA": {
-      "content_hash": "7c76095ae8b28b26f159205a69c828c91a14130a5757e1c18734d65aa5ae246d",
+      "content_hash": "cb166d5fcfd97e23ef635a443d2f3847609ae99da5d53d2adeb05e81f6d34d8e",
       "filename": "improving-monte-carlo-mergers-trees-to-better-match-n-body-s-ng5AtFbe.md",
-      "last_changed_at": 1778077157274,
-      "last_synced_at": 1778077156497,
+      "last_changed_at": 1778077764974,
+      "last_synced_at": 1778077763433,
       "title": "Improving Monte Carlo Mergers Trees to Better Match N-body Statistics"
     },
     "o4QFFb8QTkCeet8muc6vsQ": {

@@ -17,6 +17,26 @@ Some basic information on Caltech HPC:
 You'll need to set the following environment variables to allow the various libraries to be found and to set appropriate build options:
 
 ```
+export PATH=/home/abenson/perl5/bin:/home/abenson/Tools_gcc-latest/bin:/home/abenson/Tools/bin:/resnick/software9/spack/opt/spack/linux-rhel9-x86_64/gcc-13.2.0/gcc-13.2.0-w55nxklkmply3rc66ssu3nhqt2d2eg6l/bin:$PATH
+export LD_LIBRARY_PATH=/home/abenson/Tools_gcc-latest/lib:/home/abenson/Tools_gcc-latest/lib64:/home/abenson/Tools/lib:/home/abenson/Tools/lib64:/resnick/slurm/install/22.05.6/lib/slurm:/resnick/slurm/install/22.05.6/lib:/lib64:$LD_LIBRARY_PATH
+export GALACTICUS_FCFLAGS="-fintrinsic-modules-path /home/abenson/Tools_gcc-latest/finclude -fintrinsic-modules-path /home/abenson/Tools_gcc-latest/include -fintrinsic-modules-path /home/abenson/Tools_gcc-latest/include/gfortran -fintrinsic-modules-path /home/abenson/Tools_gcc-latest/lib/gfortran/modules -fintrinsic-modules-path /home/abenson/Tools/finclude -fintrinsic-modules-path /home/abenson/Tools/include -fintrinsic-modules-path /home/abenson/Tools/include/gfortran -fintrinsic-modules-path /home/abenson/Tools/lib/gfortran/modules -L/home/abenson/Tools/lib -L/home/abenson/Tools/lib64 -L/home/abenson/Tools_gcc-latest/lib -L/home/abenson/Tools/lib64"
+export GALACTICUS_CFLAGS="-I/home/abenson/Tools_gcc-latest/include -I/home/abenson/Tools/include"
+export GALACTICUS_CPPFLAGS="-I/home/abenson/Tools_gcc-latest/include -I/home/abenson/Tools/include -I/home/abenson/Tools/include/libqhullcpp"
+```
+
+I'd suggest placing these into your `.bashrc` file (or creating a function in there which sets these so you can easily run that function when you need to). Note that if you do this you'll need to either log out and back in, or enter these commands at the command line also for them to take effect right away.
+
+Galacticus requires various Python packages to build. The easiest way to ensure that you have all of these available is to do:
+```
+pip install -e .
+```
+
+### Notes for older versions
+
+#### Versions pre-June 2026
+
+If you are building a version of Galacticus prior to revision [](https://github.com/galacticusorg/galacticus/commit/) (released on 06/01/2026), you must use the older compilers. To do so, replace the above settings with:
+```
 export PATH=/home/abenson/perl5/bin:/home/abenson/Tools/bin:$PATH
 export LD_LIBRARY_PATH=/home/abenson/Tools/lib:/home/abenson/Tools/lib64:$LD_LIBRARY_PATH
 export GALACTICUS_FCFLAGS="-fintrinsic-modules-path /home/abenson/Tools/finclude -fintrinsic-modules-path /home/abenson/Tools/include -fintrinsic-modules-path /home/abenson/Tools/include/gfortran -fintrinsic-modules-path /home/abenson/Tools/lib/gfortran/modules -L/home/abenson/Tools/lib -L/home/abenson/Tools/lib64"
@@ -25,9 +45,7 @@ export GALACTICUS_CPPFLAGS="-I/home/abenson/Tools/include -I/home/abenson/Tools/
 export PERL5LIB=/home/abenson/perl5/lib/perl5
 ```
 
-I'd suggest placing these into your `.bashrc` file (or creating a function in there which sets these so you can easily run that function when you need to). Note that if you do this you'll need to either log out and back in, or enter these commands at the command line also for them to take effect right away.
-
-### Note for older versions
+#### Versions pre-December 2024
 
 If you are building a version of Galacticus prior to revision [a6a5c8c](https://github.com/galacticusorg/galacticus/commit/a6a5c8c3a3e96a1a9b9e49e75278790df784f07c) (released on 12/01/2024), you must use the older HDF5 library (v1.8.20). To do so, replace the above settings with:
 ```

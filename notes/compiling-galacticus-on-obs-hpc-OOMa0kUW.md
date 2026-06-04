@@ -24,9 +24,23 @@ This will load the required compilers and libraries and set your environment var
 
 If you use Galacticus extensively I'd suggest placing this command into your `.bashrc` file so that the module is loaded automatically whenever you log in.
 
+Galacticus requires various Python packages to build. The easiest way to ensure that you have all of these available is to do:
+```
+pip install -e .
+```
+
 ### Note for older versions
 
-If you are building a version of Galacticus prior to revision [a6a5c8c](https://github.com/galacticusorg/galacticus/commit/a6a5c8c3a3e96a1a9b9e49e75278790df784f07c) (released on 12/01/2024), you must use the older HDF5 library (v.1.8.20) you should instead do:
+#### Versions pre-June 2026
+
+If you are building a version of Galacticus prior to revision ](https://github.com/galacticusorg/galacticus/commit/) (released on 06/01/2026), which requires older compilers, you should instead do:
+```
+module load galacticus-gcc12
+```
+
+#### Versions pre-December 2024
+
+If you are building a version of Galacticus prior to revision [a6a5c8c](https://github.com/galacticusorg/galacticus/commit/a6a5c8c3a3e96a1a9b9e49e75278790df784f07c) (released on 12/01/2024), which requires an older HDF5 library (v.1.8.20), you should instead do:
 ```
 module load galacticus_hdf5v1.8.20
 ```

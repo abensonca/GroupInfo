@@ -16,27 +16,36 @@ Some basic information on NERSC:
 ## Build environment
 
 You'll need to set the following environment variables to allow the various libraries to be found and to set appropriate build options:
-
-```
-export PATH=/global/cfs/cdirs/m4943/Galacticus/buildTools/gcc-12/bin:/global/cfs/cdirs/m4943/Galacticus/buildTools/bin:$PATH
-export LD_LIBRARY_PATH=/global/cfs/cdirs/m4943/Galacticus/buildTools/lib:/global/cfs/cdirs/m4943/Galacticus/buildTools/lib64:/lib:/lib64:$LD_LIBRARY_PATH
-export GALACTICUS_FCFLAGS="-fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools/finclude -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools/lib -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools/include -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools/include/gfortran -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools/lib/gfortran/modules -L/global/cfs/cdirs/m4943/Galacticus/buildTools/lib -L/global/cfs/cdirs/m4943/Galacticus/buildTools/lib64"
-export GALACTICUS_CFLAGS="-I/global/cfs/cdirs/m4943/Galacticus/buildTools/include"
-export GALACTICUS_CPPFLAGS="-I/global/cfs/cdirs/m4943/Galacticus/buildTools/include"
-export PERL5LIB="/global/cfs/cdirs/m4943/Galacticus/buildTools/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
-```
-
-I'd suggest placing these into your `.bashrc` file (or creating a function in there which sets these so you can easily run that function when you need to). Note that if you do this you'll need to either log out and back in, or enter these commands at the command line also for them to take effect right away.
-
-### Note for `gcc-latest` version (2026)
-
-If you are building a version of Galacticus on the [`gfortranFinalization`](https://github.com/galacticusorg/galacticus/tree/gfortranFinalization) branch you will need to adjust these settings, replacing the above with:
 ```
 export PATH=/global/cfs/cdirs/m4943/Galacticus/buildTools_gcc-latest/bin:/global/cfs/cdirs/m4943/Galacticus/buildTools/gcc-12/bin:/global/cfs/cdirs/m4943/Galacticus/buildTools/bin:$PATH
 export LD_LIBRARY_PATH=/global/cfs/cdirs/m4943/Galacticus/buildTools_gcc-latest/lib:/global/cfs/cdirs/m4943/Galacticus/buildTools_gcc-latest/lib64:/lib:/lib64:/global/cfs/cdirs/m4943/Galacticus/buildTools/lib:/global/cfs/cdirs/m4943/Galacticus/buildTools/lib64:/lib:/lib64:$LD_LIBRARY_PATH
 export GALACTICUS_FCFLAGS="-fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools_gcc-latest/finclude -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools_gcc-latest/lib -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools_gcc-latest/include -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools_gcc-latest/include/gfortran -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools_gcc-latest/lib/gfortran/modules -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools/finclude -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools/lib -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools/include -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools/include/gfortran -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools/lib/gfortran/modules -L/global/cfs/cdirs/m4943/Galacticus/buildTools/lib -L/global/cfs/cdirs/m4943/Galacticus/buildTools_gcc-latest/lib64 -L/global/cfs/cdirs/m4943/Galacticus/buildTools/lib64"
 export GALACTICUS_CFLAGS="-I/global/cfs/cdirs/m4943/Galacticus/buildTools_gcc-latest/include -I/global/cfs/cdirs/m4943/Galacticus/buildTools/include"
 export GALACTICUS_CPPFLAGS="-I/global/cfs/cdirs/m4943/Galacticus/buildTools_gcc-latest/include -I/global/cfs/cdirs/m4943/Galacticus/buildTools/include"
+```
+
+I'd suggest placing these into your `.bashrc` file (or creating a function in there which sets these so you can easily run that function when you need to). Note that if you do this you'll need to either log out and back in, or enter these commands at the command line also for them to take effect right away.
+
+Galacticus requires various Python packages to build. You should load one of NERSC's `python` modules, e.g.:
+```
+module load python/3.12-26.1.0
+```
+(this can also be placed in your `.bashrc` file).
+
+The easiest way to ensure that you have all Python packages available is to do:
+```
+pip install -e .
+```
+
+#### Versions pre-June 2026
+
+If you are building a version of Galacticus prior to revision [](https://github.com/galacticusorg/galacticus/commit/) (released on 06/01/2026), you must use the older compilers. To do so, replace the above settings with:
+```
+export PATH=/global/cfs/cdirs/m4943/Galacticus/buildTools/gcc-12/bin:/global/cfs/cdirs/m4943/Galacticus/buildTools/bin:$PATH
+export LD_LIBRARY_PATH=/global/cfs/cdirs/m4943/Galacticus/buildTools/lib:/global/cfs/cdirs/m4943/Galacticus/buildTools/lib64:/lib:/lib64:$LD_LIBRARY_PATH
+export GALACTICUS_FCFLAGS="-fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools/finclude -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools/lib -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools/include -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools/include/gfortran -fintrinsic-modules-path /global/cfs/cdirs/m4943/Galacticus/buildTools/lib/gfortran/modules -L/global/cfs/cdirs/m4943/Galacticus/buildTools/lib -L/global/cfs/cdirs/m4943/Galacticus/buildTools/lib64"
+export GALACTICUS_CFLAGS="-I/global/cfs/cdirs/m4943/Galacticus/buildTools/include"
+export GALACTICUS_CPPFLAGS="-I/global/cfs/cdirs/m4943/Galacticus/buildTools/include"
 export PERL5LIB="/global/cfs/cdirs/m4943/Galacticus/buildTools/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
 ```
 
