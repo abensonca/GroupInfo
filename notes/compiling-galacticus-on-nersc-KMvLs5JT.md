@@ -110,6 +110,6 @@ See [here](https://github.com/galacticusorg/galacticus/wiki/Python-interface-%28
 
 ## See also
 
-- [Submitting Jobs on NERSC](submitting-jobs-on-nersc.md)
-- [Compiling Galacticus on Caltech HPC](compiling-galacticus-on-caltech-hpc-jol6HnNq.md)
-- [Compiling Galacticus on OBS HPC](compiling-galacticus-on-obs-hpc-OOMa0kUW.md)
+- [Submitting Jobs on NERSC](https://hackmd.io/OfOuRLNuRxWnIOR3gW4SCg)
+- [Compiling Galacticus on Caltech HPC](https://hackmd.io/jol6HnNqT7KVaAMwzhXoHg)
+- [Compiling Galacticus on OBS HPC](https://hackmd.io/OOMa0kUWRYGOs1gqyYPtXA)

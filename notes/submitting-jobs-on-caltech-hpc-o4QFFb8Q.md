@@ -202,5 +202,5 @@ This is where the `--bind-to none` is important. Without it, MPI restricts all O
 
 ## See also
 
-- [Compiling Galacticus on Caltech HPC](compiling-galacticus-on-caltech-hpc-jol6HnNq.md)
-- [Submitting Jobs on OBS HPC](submitting-jobs-on-obs-hpc-aCJxUqdn.md)
+- [Compiling Galacticus on Caltech HPC](https://hackmd.io/jol6HnNqT7KVaAMwzhXoHg)
+- [Submitting Jobs on OBS HPC](https://hackmd.io/aCJxUqdnShSAjVcX_vUwpg)

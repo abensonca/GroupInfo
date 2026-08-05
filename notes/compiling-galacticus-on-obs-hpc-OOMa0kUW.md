@@ -28,7 +28,7 @@ If you use Galacticus extensively I'd suggest placing this command into your `.b
 
 #### Versions pre-June 2026
 
-If you are building a version of Galacticus prior to revision ](https://github.com/galacticusorg/galacticus/commit/) (released on 06/01/2026), which requires older compilers, you should instead do:
+If you are building a version of Galacticus prior to revision [](https://github.com/galacticusorg/galacticus/commit/) (released on 06/01/2026), which requires older compilers, you should instead do:
 ```
 module load galacticus-gcc12
 ```
@@ -154,6 +154,6 @@ We have shared storage space at `/carnegie/nobackup/groups/dmtheory/` - used to 
 
 ## See also
 
-- [Submitting Jobs on OBS HPC](submitting-jobs-on-obs-hpc-aCJxUqdn.md)
-- [Compiling Galacticus on Caltech HPC](compiling-galacticus-on-caltech-hpc-jol6HnNq.md)
-- [Compiling Galacticus on NERSC](compiling-galacticus-on-nersc-KMvLs5JT.md)
+- [Submitting Jobs on OBS HPC](https://hackmd.io/aCJxUqdnShSAjVcX_vUwpg)
+- [Compiling Galacticus on Caltech HPC](https://hackmd.io/jol6HnNqT7KVaAMwzhXoHg)
+- [Compiling Galacticus on NERSC](https://hackmd.io/_KMvLs5JTT6dTPA1VQDrrg)
