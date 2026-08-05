@@ -24,11 +24,6 @@ This will load the required compilers and libraries and set your environment var
 
 If you use Galacticus extensively I'd suggest placing this command into your `.bashrc` file so that the module is loaded automatically whenever you log in.
 
-Galacticus requires various Python packages to build. The easiest way to ensure that you have all of these available is to do:
-```
-pip install -e .
-```
-
 ### Note for older versions
 
 #### Versions pre-June 2026
@@ -70,6 +65,12 @@ export GALACTICUS_DATA_PATH=$HOME/Galacticus/datasets
 
 You may want to put these `export` commands in your `.bashrc` also so that you don't have to re-enter them every time.
 
+Galacticus requires various Python packages to build. The easiest way to ensure that you have all of these available is to do:
+```
+cd $GALACTICUS_EXEC_PATH
+pip install -e .
+```
+
 Galacticus generates a bunch of files at run-time which get stored in `$GALACTICUS_DATA_PATH/dynamic`. Since these can become quite large I suggest moving the `dynamic` directory to a data disk and creating a link to it. For example:
 
 ```
@@ -97,19 +98,18 @@ The copy of the `datasets` repo at `/carnegie/nobackup/appdata/galacticus/datase
 
 You should now be able to build Galacticus. It's recommended to build on a compute node if possible (as you can then use more CPUs and memory so it will go faster). To do this, first get a compute node using:
 ```
-srun --exclusive --mem=0 --pty bash -i
+srun --cpus-per-task=32 --mem=128G --pty bash -i
 ```
 This will allocate a node to you and log you in to a terminal on that node. Then you can compile:
 ```
 cd $GALACTICUS_EXEC_PATH
-make -j24 Galacticus.exe
+make -j32 Galacticus.exe
 ```
 (Once the build is finished you can leave the compute node using `exit`.)
 
-If no compute nodes are available right away, you can compile on the login node, but use fewer build jobs (otherwise your build will likely be killed automatically):
+You can also use the `dmtheory` node if you have been added to that group (ask Andrew to add you to it):
 ```
-cd $GALACTICUS_EXEC_PATH
-make -j4 Galacticus.exe
+srun -p dmtheory --cpus-per-task=32 --mem=128G --pty bash -i
 ```
 
 The build takes quite a while (~30 minutes). If it succeeds you'll have a `Galacticus.exe` executable file. It's useful to run a very quick test to make sure it's all working:

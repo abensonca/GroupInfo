@@ -184,6 +184,6 @@ The `-c Nopenmp --cpu-bind=cores` options tell `srun` to allocate `Nopenmp` core
 
 ## See also
 
-- [Compiling Galacticus on NERSC](compiling-galacticus-on-nersc-KMvLs5JT.md)
+- [Compiling Galacticus on NERSC](https://hackmd.io/_KMvLs5JTT6dTPA1VQDrrg)
 - [Submitting Jobs on Caltech HPC](submitting-jobs-on-caltech-hpc-o4QFFb8Q.md)
 - [Submitting Jobs on OBS HPC](submitting-jobs-on-obs-hpc-aCJxUqdn.md)
