@@ -28,7 +28,7 @@ If you use Galacticus extensively I'd suggest placing this command into your `.b
 
 #### Versions pre-June 2026
 
-If you are building a version of Galacticus prior to revision [](https://github.com/galacticusorg/galacticus/commit/) (released on 06/01/2026), which requires older compilers, you should instead do:
+If you are building a version of Galacticus prior to revision [b9b0b49](https://github.com/galacticusorg/galacticus/commit/b9b0b4917d1fcb2b05e0bb45212bc73419651e5e) (released on 06/01/2026), which requires older compilers, you should instead do:
 ```
 module load galacticus-gcc12
 ```

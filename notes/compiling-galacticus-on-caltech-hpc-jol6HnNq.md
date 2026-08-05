@@ -35,7 +35,7 @@ pip install -e .
 
 #### Versions pre-June 2026
 
-If you are building a version of Galacticus prior to revision [](https://github.com/galacticusorg/galacticus/commit/) (released on 06/01/2026), you must use the older compilers. To do so, replace the above settings with:
+If you are building a version of Galacticus prior to revision [b9b0b49](https://github.com/galacticusorg/galacticus/commit/b9b0b4917d1fcb2b05e0bb45212bc73419651e5e) (released on 06/01/2026), you must use the older compilers. To do so, replace the above settings with:
 ```
 export PATH=/home/abenson/perl5/bin:/home/abenson/Tools/bin:$PATH
 export LD_LIBRARY_PATH=/home/abenson/Tools/lib:/home/abenson/Tools/lib64:$LD_LIBRARY_PATH
