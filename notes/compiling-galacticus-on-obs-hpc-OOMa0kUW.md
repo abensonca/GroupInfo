@@ -28,14 +28,14 @@ If you use Galacticus extensively I'd suggest placing this command into your `.b
 
 #### Versions pre-June 2026
 
-If you are building a version of Galacticus prior to revision [b9b0b49](https://github.com/galacticusorg/galacticus/commit/b9b0b4917d1fcb2b05e0bb45212bc73419651e5e) (released on 06/01/2026), which requires older compilers, you should instead do:
+If you are building a version of Galacticus prior to revision [b9b0b49](https://github.com/galacticusorg/galacticus/commit/b9b0b4917d1fcb2b05e0bb45212bc73419651e5e) (released on 06/03/2026), which requires older compilers, you should instead do:
 ```
 module load galacticus-gcc12
 ```
 
 #### Versions pre-December 2024
 
-If you are building a version of Galacticus prior to revision [a6a5c8c](https://github.com/galacticusorg/galacticus/commit/a6a5c8c3a3e96a1a9b9e49e75278790df784f07c) (released on 12/01/2024), which requires an older HDF5 library (v.1.8.20), you should instead do:
+If you are building a version of Galacticus prior to revision [a6a5c8c](https://github.com/galacticusorg/galacticus/commit/a6a5c8c3a3e96a1a9b9e49e75278790df784f07c) (released on 12/02/2024), which requires an older HDF5 library (v.1.8.20), you should instead do:
 ```
 module load galacticus_hdf5v1.8.20
 ```

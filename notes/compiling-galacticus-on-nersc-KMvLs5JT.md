@@ -39,7 +39,7 @@ pip install -e .
 
 #### Versions pre-June 2026
 
-If you are building a version of Galacticus prior to revision [b9b0b49](https://github.com/galacticusorg/galacticus/commit/b9b0b4917d1fcb2b05e0bb45212bc73419651e5e) (released on 06/01/2026), you must use the older compilers. To do so, replace the above settings with:
+If you are building a version of Galacticus prior to revision [b9b0b49](https://github.com/galacticusorg/galacticus/commit/b9b0b4917d1fcb2b05e0bb45212bc73419651e5e) (released on 06/03/2026), you must use the older compilers. To do so, replace the above settings with:
 ```
 export PATH=/global/cfs/cdirs/m4943/Galacticus/buildTools/gcc-12/bin:/global/cfs/cdirs/m4943/Galacticus/buildTools/bin:$PATH
 export LD_LIBRARY_PATH=/global/cfs/cdirs/m4943/Galacticus/buildTools/lib:/global/cfs/cdirs/m4943/Galacticus/buildTools/lib64:/lib:/lib64:$LD_LIBRARY_PATH

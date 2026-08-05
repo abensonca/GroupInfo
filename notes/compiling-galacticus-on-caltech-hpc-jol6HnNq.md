@@ -35,7 +35,7 @@ pip install -e .
 
 #### Versions pre-June 2026
 
-If you are building a version of Galacticus prior to revision [b9b0b49](https://github.com/galacticusorg/galacticus/commit/b9b0b4917d1fcb2b05e0bb45212bc73419651e5e) (released on 06/01/2026), you must use the older compilers. To do so, replace the above settings with:
+If you are building a version of Galacticus prior to revision [b9b0b49](https://github.com/galacticusorg/galacticus/commit/b9b0b4917d1fcb2b05e0bb45212bc73419651e5e) (released on 06/03/2026), you must use the older compilers. To do so, replace the above settings with:
 ```
 export PATH=/home/abenson/perl5/bin:/home/abenson/Tools/bin:$PATH
 export LD_LIBRARY_PATH=/home/abenson/Tools/lib:/home/abenson/Tools/lib64:$LD_LIBRARY_PATH
@@ -47,7 +47,7 @@ export PERL5LIB=/home/abenson/perl5/lib/perl5
 
 #### Versions pre-December 2024
 
-If you are building a version of Galacticus prior to revision [a6a5c8c](https://github.com/galacticusorg/galacticus/commit/a6a5c8c3a3e96a1a9b9e49e75278790df784f07c) (released on 12/01/2024), you must use the older HDF5 library (v1.8.20). To do so, replace the above settings with:
+If you are building a version of Galacticus prior to revision [a6a5c8c](https://github.com/galacticusorg/galacticus/commit/a6a5c8c3a3e96a1a9b9e49e75278790df784f07c) (released on 12/02/2024), you must use the older HDF5 library (v1.8.20). To do so, replace the above settings with:
 ```
 export PATH=/home/abenson/perl5/bin:/home/abenson/Tools/bin:$PATH
 export LD_LIBRARY_PATH=/home/abenson/Tools_HDF51.8.20/lib:/home/abenson/Tools_HDF5/lib64:/home/abenson/Tools/lib:/home/abenson/Tools/lib64:$LD_LIBRARY_PATH
